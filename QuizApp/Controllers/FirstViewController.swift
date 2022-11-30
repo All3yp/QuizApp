@@ -9,9 +9,16 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+	private let firstView: FirstView = FirstView()
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		self.view.backgroundColor = .orange
+		self.view.backgroundColor = UIColor.CustomColor.dark
+	}
+
+	override func loadView() {
+		super.loadView()
+		self.view = firstView
 	}
 }

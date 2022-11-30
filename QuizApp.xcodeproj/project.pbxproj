@@ -16,6 +16,9 @@
 		185C7C652936D6FD0086D4BE /* QuizNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7C642936D6FD0086D4BE /* QuizNavigationController.swift */; };
 		185C7C672936E5040086D4BE /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7C662936E5040086D4BE /* FirstView.swift */; };
 		185C7C6A2936E74D0086D4BE /* CustomColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7C692936E74D0086D4BE /* CustomColor+Ext.swift */; };
+		185C7C6D2936F0760086D4BE /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7C6C2936F0760086D4BE /* ViewCode.swift */; };
+		185C7C6F2936F1430086D4BE /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7C6E2936F1430086D4BE /* UIView+Ext.swift */; };
+		185C7C712936F1ED0086D4BE /* FirstView+ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7C702936F1ED0086D4BE /* FirstView+ViewCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		185C7C642936D6FD0086D4BE /* QuizNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizNavigationController.swift; sourceTree = "<group>"; };
 		185C7C662936E5040086D4BE /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		185C7C692936E74D0086D4BE /* CustomColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomColor+Ext.swift"; sourceTree = "<group>"; };
+		185C7C6C2936F0760086D4BE /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		185C7C6E2936F1430086D4BE /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		185C7C702936F1ED0086D4BE /* FirstView+ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirstView+ViewCode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				185C7C662936E5040086D4BE /* FirstView.swift */,
+				185C7C702936F1ED0086D4BE /* FirstView+ViewCode.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				185C7C692936E74D0086D4BE /* CustomColor+Ext.swift */,
+				185C7C6C2936F0760086D4BE /* ViewCode.swift */,
+				185C7C6E2936F1430086D4BE /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -191,8 +200,11 @@
 				185C7C672936E5040086D4BE /* FirstView.swift in Sources */,
 				185C7C652936D6FD0086D4BE /* QuizNavigationController.swift in Sources */,
 				185C7C632936D6660086D4BE /* QuizNavigationControllerFactory.swift in Sources */,
+				185C7C712936F1ED0086D4BE /* FirstView+ViewCode.swift in Sources */,
+				185C7C6F2936F1430086D4BE /* UIView+Ext.swift in Sources */,
 				185C7C4C2936D4E70086D4BE /* AppDelegate.swift in Sources */,
 				185C7C4E2936D4E70086D4BE /* SceneDelegate.swift in Sources */,
+				185C7C6D2936F0760086D4BE /* ViewCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

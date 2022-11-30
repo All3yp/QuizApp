@@ -10,7 +10,8 @@ import UIKit
 extension UIColor {
 
 	struct CustomColor {
-		static let darkBlue = UIColor(hex: 0x04050b)
+		static let dark = UIColor(hex: 0x1A2330)
+		static let blue = UIColor(hex: 0x00D2F3)
 	}
 
 	convenience init(red: Int, green: Int, blue: Int) {
