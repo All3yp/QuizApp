@@ -14,6 +14,8 @@
 		185C7C582936D4EA0086D4BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185C7C562936D4EA0086D4BE /* LaunchScreen.storyboard */; };
 		185C7C632936D6660086D4BE /* QuizNavigationControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7C622936D6660086D4BE /* QuizNavigationControllerFactory.swift */; };
 		185C7C652936D6FD0086D4BE /* QuizNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7C642936D6FD0086D4BE /* QuizNavigationController.swift */; };
+		185C7C672936E5040086D4BE /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7C662936E5040086D4BE /* FirstView.swift */; };
+		185C7C6A2936E74D0086D4BE /* CustomColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185C7C692936E74D0086D4BE /* CustomColor+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		185C7C592936D4EA0086D4BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		185C7C622936D6660086D4BE /* QuizNavigationControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizNavigationControllerFactory.swift; sourceTree = "<group>"; };
 		185C7C642936D6FD0086D4BE /* QuizNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizNavigationController.swift; sourceTree = "<group>"; };
+		185C7C662936E5040086D4BE /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		185C7C692936E74D0086D4BE /* CustomColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomColor+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +62,10 @@
 		185C7C4A2936D4E70086D4BE /* QuizApp */ = {
 			isa = PBXGroup;
 			children = (
+				185C7C6B2936E7530086D4BE /* Extensions */,
 				185C7C612936D64A0086D4BE /* Factorys */,
 				185C7C5F2936D6200086D4BE /* App Delegate */,
+				185C7C682936E50A0086D4BE /* Views */,
 				185C7C602936D6290086D4BE /* Controllers */,
 				185C7C542936D4EA0086D4BE /* Assets.xcassets */,
 				185C7C562936D4EA0086D4BE /* LaunchScreen.storyboard */,
@@ -92,6 +98,22 @@
 				185C7C622936D6660086D4BE /* QuizNavigationControllerFactory.swift */,
 			);
 			path = Factorys;
+			sourceTree = "<group>";
+		};
+		185C7C682936E50A0086D4BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				185C7C662936E5040086D4BE /* FirstView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		185C7C6B2936E7530086D4BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				185C7C692936E74D0086D4BE /* CustomColor+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +186,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185C7C6A2936E74D0086D4BE /* CustomColor+Ext.swift in Sources */,
 				185C7C502936D4E70086D4BE /* FirstViewController.swift in Sources */,
+				185C7C672936E5040086D4BE /* FirstView.swift in Sources */,
 				185C7C652936D6FD0086D4BE /* QuizNavigationController.swift in Sources */,
 				185C7C632936D6660086D4BE /* QuizNavigationControllerFactory.swift in Sources */,
 				185C7C4C2936D4E70086D4BE /* AppDelegate.swift in Sources */,
