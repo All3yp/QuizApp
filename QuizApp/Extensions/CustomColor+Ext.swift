@@ -11,7 +11,8 @@ extension UIColor {
 
 	struct CustomColor {
 		static let dark = UIColor(hex: 0x1A2330)
-		static let blue = UIColor(hex: 0x00D2F3)
+		static let yellow = UIColor(hex: 0xF4C631)
+		static let gray = UIColor(hex: 0x555E67)
 	}
 
 	convenience init(red: Int, green: Int, blue: Int) {
