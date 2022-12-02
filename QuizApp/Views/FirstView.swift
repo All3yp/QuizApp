@@ -14,16 +14,16 @@ class FirstView: UIView {
 		label.text = "QuizApp"
 		label.numberOfLines = 0
 		label.textColor = .white
-		label.font = UIFont.systemFont(ofSize: 30, weight: .bold)
+		label.font = UIFont.mainFont(ofSize: 30, withWeight: .bold)
 		return label
 	}()
 
 	 let startButton: UIButton = {
 		let bnt = UIButton(type: .system)
 		 bnt.setTitle("Start", for: .normal)
-		 bnt.backgroundColor = UIColor.CustomColor.blue
+		 bnt.backgroundColor = UIColor.CustomColor.yellow
 		 bnt.setTitleColor(UIColor.CustomColor.dark, for: .normal)
-		 bnt.titleLabel?.font = .systemFont(ofSize: 25, weight: .regular)
+		 bnt.titleLabel?.font = UIFont.mainFont(ofSize: 25, withWeight: .regular)
 		return bnt
 	}()
 
