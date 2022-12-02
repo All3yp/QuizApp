@@ -11,8 +11,10 @@ final class QuizNavigationControllerFactory {
 
 	static func make() -> QuizNavigationController {
 		let navigationController = QuizNavigationController()
-		let viewController = FirstViewController()
+		let viewController = QuizViewController()
 		navigationController.viewControllers = [viewController]
 		return navigationController
 	}
 }
+
+class QuizNavigationController: UINavigationController { }
