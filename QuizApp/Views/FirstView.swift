@@ -23,7 +23,7 @@ class FirstView: UIView {
 		 bnt.setTitle("Start", for: .normal)
 		 bnt.backgroundColor = UIColor.CustomColor.yellow
 		 bnt.setTitleColor(UIColor.CustomColor.dark, for: .normal)
-		 bnt.titleLabel?.font = UIFont.mainFont(ofSize: 25, withWeight: .regular)
+		 bnt.titleLabel?.font = UIFont.mainFont(ofSize: 25)
 		return bnt
 	}()
 

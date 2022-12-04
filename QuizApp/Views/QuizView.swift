@@ -14,7 +14,7 @@ class QuizView: UIView {
 		label.numberOfLines = 1
 		label.textColor = .white
 		label.text = "Question 2 de 10"
-		label.font = UIFont.mainFont(ofSize: 19, withWeight: .regular)
+		label.font = UIFont.mainFont(ofSize: 19, withWeight: .bold)
 		return label
 	}()
 
@@ -33,7 +33,7 @@ class QuizView: UIView {
 		label.text = "44s"
 		label.numberOfLines = 1
 		label.textColor = .white
-		label.font = UIFont.mainFont(ofSize: 19, withWeight: .regular)
+		label.font = UIFont.mainFont(ofSize: 19)
 		return label
 	}()
 
@@ -54,7 +54,7 @@ class QuizView: UIView {
 		label.textColor = .white
 		label.lineBreakMode = .byWordWrapping
 		label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit?"
-		label.font = UIFont.mainFont(ofSize: 20, withWeight: .regular)
+		label.font = UIFont.mainFont(ofSize: 20)
 		return label
 	}()
 
@@ -65,7 +65,7 @@ class QuizView: UIView {
 		bnt.setTitle("Next", for: .normal)
 		bnt.backgroundColor = UIColor.CustomColor.yellow
 		bnt.setTitleColor(UIColor.CustomColor.dark, for: .normal)
-		bnt.titleLabel?.font = UIFont.mainFont(ofSize: 25, withWeight: .regular)
+		bnt.titleLabel?.font = UIFont.mainFont(ofSize: 25)
 		return bnt
 	}()
 

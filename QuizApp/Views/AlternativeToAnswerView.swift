@@ -23,7 +23,7 @@ class AlternativeToAnswerView: UIView {
 		let label = UILabel()
 		label.numberOfLines = 1
 		label.textColor = .white
-		label.font = UIFont.mainFont(ofSize: 20, withWeight: .regular)
+		label.font = UIFont.mainFont(ofSize: 20)
 		return label
 	}()
 
@@ -33,7 +33,7 @@ class AlternativeToAnswerView: UIView {
 		let label = UILabel()
 		label.numberOfLines = 1
 		label.textColor = .white
-		label.font = UIFont.mainFont(ofSize: 19, withWeight: .regular)
+		label.font = UIFont.mainFont(ofSize: 19)
 		return label
 	}()
 

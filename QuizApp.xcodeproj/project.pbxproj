@@ -25,6 +25,7 @@
 		18F278D9293AAEE100E41B90 /* BoardQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F278D8293AAEE100E41B90 /* BoardQuestionView.swift */; };
 		18F278DD293AC8DF00E41B90 /* AlternativeToAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F278DC293AC8DF00E41B90 /* AlternativeToAnswerView.swift */; };
 		18F32A71293C268100D7704F /* AlternativeToAnswerView+ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F32A70293C268100D7704F /* AlternativeToAnswerView+ViewCode.swift */; };
+		18F32A73293CD87B00D7704F /* QuizResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F32A72293CD87B00D7704F /* QuizResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		18F278D8293AAEE100E41B90 /* BoardQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardQuestionView.swift; sourceTree = "<group>"; };
 		18F278DC293AC8DF00E41B90 /* AlternativeToAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternativeToAnswerView.swift; sourceTree = "<group>"; };
 		18F32A70293C268100D7704F /* AlternativeToAnswerView+ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlternativeToAnswerView+ViewCode.swift"; sourceTree = "<group>"; };
+		18F32A72293CD87B00D7704F /* QuizResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				185C7C662936E5040086D4BE /* FirstView.swift */,
 				185C7C75293847C30086D4BE /* QuizView.swift */,
 				185C7C79293848110086D4BE /* Setup ViewCode */,
+				18F32A72293CD87B00D7704F /* QuizResultView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				185C7C6A2936E74D0086D4BE /* CustomColor+Ext.swift in Sources */,
 				185C7C502936D4E70086D4BE /* FirstViewController.swift in Sources */,
 				18F278DD293AC8DF00E41B90 /* AlternativeToAnswerView.swift in Sources */,
+				18F32A73293CD87B00D7704F /* QuizResultView.swift in Sources */,
 				185C7C732937D3EA0086D4BE /* UIFont+Ext.swift in Sources */,
 				185C7C672936E5040086D4BE /* FirstView.swift in Sources */,
 				18F32A71293C268100D7704F /* AlternativeToAnswerView+ViewCode.swift in Sources */,
