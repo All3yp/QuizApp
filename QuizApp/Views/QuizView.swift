@@ -58,6 +58,16 @@ class QuizView: UIView {
 		return label
 	}()
 
+	let alternativeToAnswerBoardView = AlternativeToAnswerView()
+
+	let nextButton: UIButton = {
+		let bnt = UIButton(type: .system)
+		bnt.setTitle("Next", for: .normal)
+		bnt.backgroundColor = UIColor.CustomColor.yellow
+		bnt.setTitleColor(UIColor.CustomColor.dark, for: .normal)
+		bnt.titleLabel?.font = UIFont.mainFont(ofSize: 25, withWeight: .regular)
+		return bnt
+	}()
 
 	// MARK: Lifecycle
 	override func didMoveToSuperview() {
