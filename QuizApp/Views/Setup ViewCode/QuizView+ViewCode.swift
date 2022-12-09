@@ -26,10 +26,10 @@ extension QuizView: ViewCode {
 
 	func setupConstraints() {
 		NSLayoutConstraint.activate([
-			clockTimeStackView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+			clockTimeStackView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 40),
 			clockTimeStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
 
-			numberOfQuestionsLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+			numberOfQuestionsLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 40),
 			numberOfQuestionsLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
 
 			boardQuestionView.topAnchor.constraint(equalTo: clockTimeStackView.bottomAnchor, constant: 40),

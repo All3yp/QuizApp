@@ -9,6 +9,8 @@ import UIKit
 
 class FirstView: UIView {
 
+	var didTapBntStartQuiz: (() -> Void)?
+
 	let titleLabel: UILabel = {
 		let label = UILabel()
 		label.text = "QuizApp"
@@ -18,12 +20,13 @@ class FirstView: UIView {
 		return label
 	}()
 
-	 let startButton: UIButton = {
+	 lazy var startButton: UIButton = {
 		let bnt = UIButton(type: .system)
 		 bnt.setTitle("Start", for: .normal)
 		 bnt.backgroundColor = UIColor.CustomColor.yellow
 		 bnt.setTitleColor(UIColor.CustomColor.dark, for: .normal)
 		 bnt.titleLabel?.font = UIFont.mainFont(ofSize: 25, withWeight: .light)
+		 bnt.addTarget(self, action: #selector(startQuizActionButtonPressed), for: .touchUpInside)
 		return bnt
 	}()
 
@@ -31,5 +34,10 @@ class FirstView: UIView {
 	override func didMoveToSuperview() {
 		super.didMoveToSuperview()
 		self.setupViewCode()
+	}
+
+	// Actions
+	@objc func startQuizActionButtonPressed(_ sender: UIButton) {
+		didTapBntStartQuiz?()
 	}
 }

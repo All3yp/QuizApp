@@ -9,6 +9,8 @@ import UIKit
 
 class QuizResultView: UIView {
 
+	var didTapBntToTakeNewQuiz: (() -> Void)?
+
 	let quizResultTitleLabel: UILabel = {
 		let label = UILabel()
 		label.numberOfLines = 1
@@ -52,17 +54,23 @@ class QuizResultView: UIView {
 		return label
 	}()
 
-	let takeNewQuizButton: UIButton = {
+	lazy var takeNewQuizButton: UIButton = {
 		let bnt = UIButton(type: .system)
 		bnt.setTitle("Take New Quiz", for: .normal)
 		bnt.backgroundColor = UIColor.CustomColor.yellow
 		bnt.setTitleColor(UIColor.CustomColor.dark, for: .normal)
 		bnt.titleLabel?.font = UIFont.mainFont(ofSize: 20, withWeight: .light)
+		bnt.addTarget(self, action: #selector(takeNewQuizActionButtonPressed), for: .touchUpInside)
 		return bnt
 	}()
 
 	override func didMoveToSuperview() {
 		self.setupViewCode()
+	}
+
+	// Actions
+	@objc func takeNewQuizActionButtonPressed(_ sender: UIButton) {
+		didTapBntToTakeNewQuiz?()
 	}
 
 }

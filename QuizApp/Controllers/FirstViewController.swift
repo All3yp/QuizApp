@@ -9,16 +9,26 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+	var coordinator: FirstViewCoordinator?
+
 	private let firstView: FirstView = FirstView()
+
+	override func loadView() {
+		super.loadView()
+		self.view = firstView
+	}
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
 		self.view.backgroundColor = UIColor.CustomColor.dark
+		goToQuizView()
 	}
 
-	override func loadView() {
-		super.loadView()
-		self.view = firstView
+	private func goToQuizView() {
+		self.firstView.didTapBntStartQuiz = { [weak self] in
+			guard let self else { return }
+			self.coordinator?.coordinate(to: QuizCoordinator(viewController: self))
+		}
 	}
 }

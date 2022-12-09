@@ -9,6 +9,8 @@ import UIKit
 
 class QuizView: UIView {
 
+	var didTapBntToFinishQuiz: (() -> Void)?
+
 	let numberOfQuestionsLabel: UILabel = {
 		let label = UILabel()
 		label.numberOfLines = 1
@@ -60,12 +62,13 @@ class QuizView: UIView {
 
 	let alternativeToAnswerBoardView = AlternativeToAnswerView()
 
-	let nextButton: UIButton = {
+	lazy var nextButton: UIButton = {
 		let bnt = UIButton(type: .system)
 		bnt.setTitle("Next", for: .normal)
 		bnt.backgroundColor = UIColor.CustomColor.yellow
 		bnt.setTitleColor(UIColor.CustomColor.dark, for: .normal)
 		bnt.titleLabel?.font = UIFont.mainFont(ofSize: 25, withWeight: .light)
+		bnt.addTarget(self, action: #selector(finishQuizActionButtonPressed), for: .touchUpInside)
 		return bnt
 	}()
 
@@ -73,5 +76,11 @@ class QuizView: UIView {
 	override func didMoveToSuperview() {
 		super.didMoveToSuperview()
 		self.setupViewCode()
+	}
+
+	// Actions
+	@objc func finishQuizActionButtonPressed(_ sender: UIButton) {
+		didTapBntToFinishQuiz?()
+		
 	}
 }

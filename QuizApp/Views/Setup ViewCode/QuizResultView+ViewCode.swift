@@ -23,7 +23,7 @@ extension QuizResultView: ViewCode {
 
 	func setupConstraints() {
 		NSLayoutConstraint.activate([
-			quizResultTitleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor),
+			quizResultTitleLabel.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 40),
 			quizResultTitleLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 
 			trophyImageView.topAnchor.constraint(equalTo: quizResultTitleLabel.bottomAnchor, constant: 50),

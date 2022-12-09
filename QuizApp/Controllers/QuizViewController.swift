@@ -9,15 +9,25 @@ import UIKit
 
 class QuizViewController: UIViewController {
 
+	var coordinator: QuizCoordinator?
+
 	private let quizView: QuizView = QuizView()
 
 	override func loadView() {
 		self.view = quizView
 	}
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		self.view.backgroundColor = UIColor.CustomColor.dark
-    }
+		goToFinalResult()
+	}
 
+	private func goToFinalResult() {
+		self.quizView.didTapBntToFinishQuiz = { [weak self] in
+			guard let self else { return }
+			self.coordinator?.coordinate(to: FinishQuizToResultCoordinator(viewController: self))
+		}
+	}
+	
 }
