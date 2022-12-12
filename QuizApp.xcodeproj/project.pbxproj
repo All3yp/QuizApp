@@ -26,6 +26,10 @@
 		18AE29C02946503B00DF379C /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29BF2946503B00DF379C /* Quiz.swift */; };
 		18AE29C2294654A600DF379C /* QuizServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29C1294654A600DF379C /* QuizServiceImplementation.swift */; };
 		18AE29C42946729F00DF379C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29C32946729F00DF379C /* Router.swift */; };
+		18AE29CD29474B7100DF379C /* Cordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29CC29474B7100DF379C /* Cordinatable.swift */; };
+		18AE29CF29474BA100DF379C /* HomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29CE29474BA100DF379C /* HomeViewModelType.swift */; };
+		18AE29D129474BEF00DF379C /* QuizViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29D029474BEF00DF379C /* QuizViewModelType.swift */; };
+		18AE29D329474D2800DF379C /* FinishQuizToResultViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29D229474D2800DF379C /* FinishQuizToResultViewModelType.swift */; };
 		18F278D7293A823600E41B90 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F278D6293A823600E41B90 /* QuizViewController.swift */; };
 		18F278D9293AAEE100E41B90 /* BoardQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F278D8293AAEE100E41B90 /* BoardQuestionView.swift */; };
 		18F278DD293AC8DF00E41B90 /* AlternativeToAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F278DC293AC8DF00E41B90 /* AlternativeToAnswerView.swift */; };
@@ -62,6 +66,10 @@
 		18AE29BF2946503B00DF379C /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		18AE29C1294654A600DF379C /* QuizServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizServiceImplementation.swift; sourceTree = "<group>"; };
 		18AE29C32946729F00DF379C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		18AE29CC29474B7100DF379C /* Cordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cordinatable.swift; sourceTree = "<group>"; };
+		18AE29CE29474BA100DF379C /* HomeViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelType.swift; sourceTree = "<group>"; };
+		18AE29D029474BEF00DF379C /* QuizViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModelType.swift; sourceTree = "<group>"; };
+		18AE29D229474D2800DF379C /* FinishQuizToResultViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishQuizToResultViewModelType.swift; sourceTree = "<group>"; };
 		18F278D6293A823600E41B90 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		18F278D8293AAEE100E41B90 /* BoardQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardQuestionView.swift; sourceTree = "<group>"; };
 		18F278DC293AC8DF00E41B90 /* AlternativeToAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlternativeToAnswerView.swift; sourceTree = "<group>"; };
@@ -193,6 +201,7 @@
 			children = (
 				18F32A74293D35EC00D7704F /* QuizResultViewController.swift */,
 				18F32A8F293ED19700D7704F /* FinishQuizToResultCoordinator.swift */,
+				18AE29D229474D2800DF379C /* FinishQuizToResultViewModelType.swift */,
 				18AE29C92946BF2C00DF379C /* View */,
 			);
 			path = QuizResult;
@@ -203,6 +212,7 @@
 			children = (
 				185C7C4F2936D4E70086D4BE /* HomeViewController.swift */,
 				18F32A97293F626200D7704F /* HomeViewCoordinator.swift */,
+				18AE29CE29474BA100DF379C /* HomeViewModelType.swift */,
 				18AE29C82946BF1300DF379C /* View */,
 			);
 			path = Home;
@@ -231,6 +241,7 @@
 			children = (
 				18F278D6293A823600E41B90 /* QuizViewController.swift */,
 				18F32A8D293ED02500D7704F /* QuizCoordinator.swift */,
+				18AE29D029474BEF00DF379C /* QuizViewModelType.swift */,
 				18AE29CB2946BF8C00DF379C /* View */,
 			);
 			path = Quiz;
@@ -249,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				18F32A8B293ECF2700D7704F /* CoordinatorProtocol.swift */,
+				18AE29CC29474B7100DF379C /* Cordinatable.swift */,
 				18F32A93293ED3DD00D7704F /* AppCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -325,13 +337,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F32A94293ED3DD00D7704F /* AppCoordinator.swift in Sources */,
+				18AE29CF29474BA100DF379C /* HomeViewModelType.swift in Sources */,
 				18F32A90293ED19700D7704F /* FinishQuizToResultCoordinator.swift in Sources */,
 				185C7C6A2936E74D0086D4BE /* CustomColor+Ext.swift in Sources */,
 				185C7C502936D4E70086D4BE /* HomeViewController.swift in Sources */,
 				18F278DD293AC8DF00E41B90 /* AlternativeToAnswerView.swift in Sources */,
+				18AE29D329474D2800DF379C /* FinishQuizToResultViewModelType.swift in Sources */,
 				18F32A73293CD87B00D7704F /* QuizResultView.swift in Sources */,
 				185C7C732937D3EA0086D4BE /* UIFont+Ext.swift in Sources */,
 				185C7C672936E5040086D4BE /* HomeView.swift in Sources */,
+				18AE29D129474BEF00DF379C /* QuizViewModelType.swift in Sources */,
 				18F32A71293C268100D7704F /* AlternativeToAnswerView+ViewCode.swift in Sources */,
 				185C7C76293847C30086D4BE /* QuizView.swift in Sources */,
 				18F32A75293D35EC00D7704F /* QuizResultViewController.swift in Sources */,
@@ -351,6 +366,7 @@
 				18AE29BD29464FFB00DF379C /* QuizApi.swift in Sources */,
 				18F32A98293F626200D7704F /* HomeViewCoordinator.swift in Sources */,
 				185C7C78293847EF0086D4BE /* QuizView+ViewCode.swift in Sources */,
+				18AE29CD29474B7100DF379C /* Cordinatable.swift in Sources */,
 				185C7C4E2936D4E70086D4BE /* SceneDelegate.swift in Sources */,
 				185C7C6D2936F0760086D4BE /* ViewCode.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  HomeViewCoordinator.swift
+//  HomeCoordinator.swift
 //  QuizApp
 //
 //  Created by Alley Pereira on 06/12/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class HomeViewCoordinator: Coordinator {
+final class HomeCoordinator: Coordinator {
 
 	let viewController: UIViewController
 

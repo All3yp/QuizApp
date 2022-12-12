@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-	var coordinator: HomeViewCoordinator?
+	var coordinator: HomeCoordinator?
 
 	private let homeView: HomeView = HomeView()
 

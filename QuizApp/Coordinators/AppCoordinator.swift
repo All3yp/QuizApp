@@ -20,6 +20,6 @@ final class AppCoordinator: Coordinator {
 		window.rootViewController = viewController
 		window.makeKeyAndVisible()
 
-		coordinate(to: HomeViewCoordinator(viewController: viewController))
+		coordinate(to: HomeCoordinator(viewController: viewController))
 	}
 }
