@@ -1,5 +1,5 @@
 //
-//  FirstView+ViewCode.swift
+//  HomeView+ViewCode.swift
 //  QuizApp
 //
 //  Created by Alley Pereira on 29/11/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension FirstView: ViewCode {
+extension HomeView: ViewCode {
 
 	func addSubviews() {
 		self.add(subviews: titleLabel, startButton)

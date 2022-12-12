@@ -22,24 +22,24 @@ struct QuizApi {
 		self.serviceManager = serviceManager
 	}
 
-	func fetchQuestionsForComputerScience(_ completion: @escaping (Result<[QuizResult], ServiceError>) -> Void) {
+	func fetchQuestionsForComputerScience(_ completion: @escaping (Result<Quiz, ServiceError>) -> Void) {
 		serviceManager.fetchQuestionsForComputerScience { result in
 			switch result {
 				case .success(let success):
-					completion(success)
+					completion(.success(success))
 				case .failure(let failure):
-					completion(failure)
+					completion(.failure(failure))
 			}
 		}
 	} //: FETCH
 
-	func fetchQuestionsForRandomThemes(_ completion: @escaping (Result<[QuizResult], ServiceError>) -> Void) {
+	func fetchQuestionsForRandomThemes(_ completion: @escaping (Result<Quiz, ServiceError>) -> Void) {
 		serviceManager.fetchQuestionsForRandomThemes { result in
 			switch result {
 				case .success(let success):
-					completion(success)
+					completion(.success(success))
 				case .failure(let failure):
-					completion(failure)
+					completion(.failure(failure))
 			}
 		}
 	} //: FETCH

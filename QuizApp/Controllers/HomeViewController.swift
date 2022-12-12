@@ -7,15 +7,15 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class HomeViewController: UIViewController {
 
-	var coordinator: FirstViewCoordinator?
+	var coordinator: HomeViewCoordinator?
 
-	private let firstView: FirstView = FirstView()
+	private let homeView: HomeView = HomeView()
 
 	override func loadView() {
 		super.loadView()
-		self.view = firstView
+		self.view = homeView
 	}
 
 	override func viewDidLoad() {
@@ -26,7 +26,7 @@ class FirstViewController: UIViewController {
 	}
 
 	private func goToQuizView() {
-		self.firstView.didTapBntStartQuiz = { [weak self] in
+		self.homeView.didTapBntStartQuiz = { [weak self] in
 			guard let self else { return }
 			self.coordinator?.coordinate(to: QuizCoordinator(viewController: self))
 		}

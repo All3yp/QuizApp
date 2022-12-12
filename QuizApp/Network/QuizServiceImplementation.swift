@@ -15,7 +15,7 @@ final class QuizServiceImplementation: QuizApiService {
 		self.networkDataSource = networkDataSource
 	}
 
-	func fetchQuestionsForComputerScience(_ completion: @escaping (Result<[QuizResult], ServiceError>) -> Void) {
+	func fetchQuestionsForComputerScience(_ completion: @escaping (Result<Quiz, ServiceError>) -> Void) {
 		networkDataSource.get(request: Router.computerScience.getRequest) { result in
 			switch result {
 				case .success(let data):
@@ -31,7 +31,7 @@ final class QuizServiceImplementation: QuizApiService {
 		}
 	} //: FETCH
 
-	func fetchQuestionsForRandomThemes(_ completion: @escaping (Result<[QuizResult], ServiceError>) -> Void) {
+	func fetchQuestionsForRandomThemes(_ completion: @escaping (Result<Quiz, ServiceError>) -> Void) {
 		networkDataSource.get(request: Router.random.getRequest) { result in
 			switch result {
 				case .success(let data):
