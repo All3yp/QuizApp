@@ -6,6 +6,6 @@
 //
 
 import Foundation
-protocol QuizViewModelType: Coordinatable {
+protocol QuizViewModelType: AnyObject {
 	var coordinator: QuizCoordinator? { get set }
 }

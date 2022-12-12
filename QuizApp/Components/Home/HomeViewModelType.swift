@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol HomeViewModelType: Coordinatable {
+protocol HomeViewModelType: AnyObject {
 	var coordinator: HomeCoordinator? { get set }
 }

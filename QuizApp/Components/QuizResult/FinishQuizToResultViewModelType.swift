@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol FinishQuizToResultViewModelType: Coordinatable {
+protocol FinishQuizToResultViewModelType: AnyObject {
 	var coordinator: FinishQuizToResultCoordinator? { get set }
 }

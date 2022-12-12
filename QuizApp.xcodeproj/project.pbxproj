@@ -26,7 +26,6 @@
 		18AE29C02946503B00DF379C /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29BF2946503B00DF379C /* Quiz.swift */; };
 		18AE29C2294654A600DF379C /* QuizServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29C1294654A600DF379C /* QuizServiceImplementation.swift */; };
 		18AE29C42946729F00DF379C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29C32946729F00DF379C /* Router.swift */; };
-		18AE29CD29474B7100DF379C /* Cordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29CC29474B7100DF379C /* Cordinatable.swift */; };
 		18AE29CF29474BA100DF379C /* HomeViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29CE29474BA100DF379C /* HomeViewModelType.swift */; };
 		18AE29D129474BEF00DF379C /* QuizViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29D029474BEF00DF379C /* QuizViewModelType.swift */; };
 		18AE29D329474D2800DF379C /* FinishQuizToResultViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE29D229474D2800DF379C /* FinishQuizToResultViewModelType.swift */; };
@@ -66,7 +65,6 @@
 		18AE29BF2946503B00DF379C /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		18AE29C1294654A600DF379C /* QuizServiceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizServiceImplementation.swift; sourceTree = "<group>"; };
 		18AE29C32946729F00DF379C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		18AE29CC29474B7100DF379C /* Cordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cordinatable.swift; sourceTree = "<group>"; };
 		18AE29CE29474BA100DF379C /* HomeViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelType.swift; sourceTree = "<group>"; };
 		18AE29D029474BEF00DF379C /* QuizViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModelType.swift; sourceTree = "<group>"; };
 		18AE29D229474D2800DF379C /* FinishQuizToResultViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishQuizToResultViewModelType.swift; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				18F32A8B293ECF2700D7704F /* CoordinatorProtocol.swift */,
-				18AE29CC29474B7100DF379C /* Cordinatable.swift */,
 				18F32A93293ED3DD00D7704F /* AppCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -366,7 +363,6 @@
 				18AE29BD29464FFB00DF379C /* QuizApi.swift in Sources */,
 				18F32A98293F626200D7704F /* HomeViewCoordinator.swift in Sources */,
 				185C7C78293847EF0086D4BE /* QuizView+ViewCode.swift in Sources */,
-				18AE29CD29474B7100DF379C /* Cordinatable.swift in Sources */,
 				185C7C4E2936D4E70086D4BE /* SceneDelegate.swift in Sources */,
 				185C7C6D2936F0760086D4BE /* ViewCode.swift in Sources */,
 			);
