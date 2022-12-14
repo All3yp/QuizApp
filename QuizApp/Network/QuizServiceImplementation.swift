@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class QuizServiceImplementation: QuizApiService {
+class QuizServiceImplementation: QuizApiService {
 
 	private let networkDataSource: NetworkManager
 

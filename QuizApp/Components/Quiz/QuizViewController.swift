@@ -12,9 +12,8 @@ class QuizViewController: UIViewController, QuizDelegate {
 	var coordinator: QuizCoordinator?
 	let quizView: QuizView = QuizView()
 
-	private var questionAnswered: Int = 1
-	private lazy var viewModel = QuizViewModel(delegate: self)
-
+	var questionAnswered: Int = 1
+	lazy var viewModel = QuizViewModel(delegate: self)
 
 	// MARK:  - Lifecycle
 	override func loadView() {
@@ -48,7 +47,7 @@ class QuizViewController: UIViewController, QuizDelegate {
 		updateQuizView(questionAnswered: questionAnswered, quiz: quiz, result: result, answers: answers)
 	}
 
-	func updateQuizView(questionAnswered: Int, quiz: Quiz, result: QuizResult, answers: [String]) {
+	private func updateQuizView(questionAnswered: Int, quiz: Quiz, result: QuizResult, answers: [String]) {
 		var answers = answers
 		DispatchQueue.main.async { [self] in
 			self.quizView.numberOfQuestionsLabel.text = "Question \(String(describing: questionAnswered)) of \(quiz.results.count)"
