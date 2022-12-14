@@ -74,7 +74,7 @@ class AlternativeToAnswerView: UIView {
 		numberAlternativeLabel.tintColor = .white
 
 		answerAlternativeLabel.tintColor = .white
-		answerAlternativeLabel.text = "Lore Ipsum siamet"
+//		answerAlternativeLabel.text = "Lore Ipsum siamet"
 
 		rightOrWrongIconImageView.image = UIImage(systemName: "x.circle.fill")
 		rightOrWrongIconImageView.tintColor = .red

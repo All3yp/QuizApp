@@ -15,9 +15,9 @@ extension QuizView: ViewCode {
 		clockImageView.translatesAutoresizingMaskIntoConstraints = false
 		timeMissingLabel.translatesAutoresizingMaskIntoConstraints = false
 		self.add(subviews: clockTimeStackView,
-				 numberOfQuestionsLabel,
-				 boardQuestionView,
-				 questionLabel,
+						 numberOfQuestionsLabel,
+						 boardQuestionView,
+						 questionLabel,
 						 alternativeToAnswerBoardView01,
 						 alternativeToAnswerBoardView02,
 						 alternativeToAnswerBoardView03,
@@ -25,6 +25,15 @@ extension QuizView: ViewCode {
 						 nextButton
 		)
 		self.deactivateTranslateMaskIntoForViews()
+	}
+
+	func setupAdditionalConfiguration() {
+		nextButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+		nextButton.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
+		nextButton.layer.shadowOpacity = 1.0
+		nextButton.layer.shadowRadius = 0.0
+		nextButton.layer.masksToBounds = false
+		nextButton.layer.cornerRadius = 15.0
 	}
 
 	func setupConstraints() {
@@ -70,15 +79,6 @@ extension QuizView: ViewCode {
 			nextButton.widthAnchor.constraint(equalToConstant: self.bounds.width/2),
 			nextButton.heightAnchor.constraint(equalToConstant: 70)
 		])
-	}
-
-	func setupAdditionalConfiguration() {
-		nextButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-		nextButton.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
-		nextButton.layer.shadowOpacity = 1.0
-		nextButton.layer.shadowRadius = 0.0
-		nextButton.layer.masksToBounds = false
-		nextButton.layer.cornerRadius = 15.0
 	}
 
 }

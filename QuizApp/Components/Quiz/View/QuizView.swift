@@ -15,7 +15,6 @@ class QuizView: UIView {
 		let label = UILabel()
 		label.numberOfLines = 1
 		label.textColor = .white
-		label.text = "Question 2 de 10" // Debug View
 		label.font = UIFont.mainFont(ofSize: 21, withWeight: .light)
 		return label
 	}()
@@ -32,7 +31,6 @@ class QuizView: UIView {
 
 	let timeMissingLabel: UILabel = {
 		let label = UILabel()
-		label.text = "44s" // Debug View
 		label.numberOfLines = 1
 		label.textColor = .white
 		label.font = UIFont.mainFont(ofSize: 19)
@@ -55,7 +53,6 @@ class QuizView: UIView {
 		label.numberOfLines = 0
 		label.textColor = .white
 		label.lineBreakMode = .byWordWrapping
-		label.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit?" // Debug View
 		label.font = UIFont.mainFont(ofSize: 20)
 		return label
 	}()
