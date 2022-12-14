@@ -84,4 +84,17 @@ class QuizView: UIView {
 		didTapBntToFinishQuiz?()
 		
 	}
+
+	// Load
+	func updateQuizView(questionAnswered: Int, total: Int, question: String, answers: [String]) {
+		var answers = answers
+		DispatchQueue.main.async { [self] in
+			self.numberOfQuestionsLabel.text = "Question \(questionAnswered) of \(total)"
+			self.questionLabel.text = question
+			self.alternativeToAnswerBoardView01.answerAlternativeLabel.text = answers.popLast()
+			self.alternativeToAnswerBoardView02.answerAlternativeLabel.text = answers.popLast()
+			self.alternativeToAnswerBoardView03.answerAlternativeLabel.text = answers.popLast()
+			self.alternativeToAnswerBoardView04.answerAlternativeLabel.text = answers.popLast()
+		}
+	}
 }
