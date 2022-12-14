@@ -40,7 +40,7 @@ class QuizViewController: UIViewController, QuizDelegate {
 	func loadQuiz(with quiz: Quiz) {
 		// Extract the relevant data from the Quiz object
 		let result = quiz.results[questionAnswered - 1]
-		let answersViewModel = AnsweresViewModel(answer: result.incorrectAnswers + [result.correctAnswer], correctAnswer: result.correctAnswer)
+		let answersViewModel = AnswersViewModel(answer: result.incorrectAnswers + [result.correctAnswer], correctAnswer: result.correctAnswer)
 		let answers = answersViewModel.answer.shuffled()
 
 		// Update the quiz view with the extracted data

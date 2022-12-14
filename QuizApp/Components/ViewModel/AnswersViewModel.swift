@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AnsweresViewModel {
+struct AnswersViewModel {
 	var answer: [String]
 	let correctAnswer: String
 }
