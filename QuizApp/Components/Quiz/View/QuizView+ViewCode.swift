@@ -18,8 +18,11 @@ extension QuizView: ViewCode {
 				 numberOfQuestionsLabel,
 				 boardQuestionView,
 				 questionLabel,
-				 alternativeToAnswerBoardView,
-				 nextButton
+						 alternativeToAnswerBoardView01,
+						 alternativeToAnswerBoardView02,
+						 alternativeToAnswerBoardView03,
+						 alternativeToAnswerBoardView04,
+						 nextButton
 		)
 		self.deactivateTranslateMaskIntoForViews()
 	}
@@ -42,12 +45,27 @@ extension QuizView: ViewCode {
 			questionLabel.leadingAnchor.constraint(equalTo: boardQuestionView.leadingAnchor, constant: 14),
 			questionLabel.trailingAnchor.constraint(equalTo: boardQuestionView.trailingAnchor, constant: -14),
 
-			alternativeToAnswerBoardView.topAnchor.constraint(equalTo: boardQuestionView.bottomAnchor, constant: 50),
-			alternativeToAnswerBoardView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 25),
-			alternativeToAnswerBoardView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -25),
-			alternativeToAnswerBoardView.heightAnchor.constraint(equalToConstant: 70),
+			alternativeToAnswerBoardView01.topAnchor.constraint(equalTo: boardQuestionView.bottomAnchor, constant: 45),
+			alternativeToAnswerBoardView01.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 25),
+			alternativeToAnswerBoardView01.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -25),
+			alternativeToAnswerBoardView01.heightAnchor.constraint(equalToConstant: 70),
 
-			nextButton.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -80),
+			alternativeToAnswerBoardView02.topAnchor.constraint(equalTo: alternativeToAnswerBoardView01.bottomAnchor, constant: 15),
+			alternativeToAnswerBoardView02.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 25),
+			alternativeToAnswerBoardView02.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -25),
+			alternativeToAnswerBoardView02.heightAnchor.constraint(equalToConstant: 70),
+
+			alternativeToAnswerBoardView03.topAnchor.constraint(equalTo: alternativeToAnswerBoardView02.bottomAnchor, constant: 15),
+			alternativeToAnswerBoardView03.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 25),
+			alternativeToAnswerBoardView03.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -25),
+			alternativeToAnswerBoardView03.heightAnchor.constraint(equalToConstant: 70),
+
+			alternativeToAnswerBoardView04.topAnchor.constraint(equalTo: alternativeToAnswerBoardView03.bottomAnchor, constant: 15),
+			alternativeToAnswerBoardView04.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 25),
+			alternativeToAnswerBoardView04.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -25),
+			alternativeToAnswerBoardView04.heightAnchor.constraint(equalToConstant: 70),
+
+			nextButton.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -60),
 			nextButton.centerXAnchor.constraint(equalTo: self.centerXAnchor),
 			nextButton.widthAnchor.constraint(equalToConstant: self.bounds.width/2),
 			nextButton.heightAnchor.constraint(equalToConstant: 70)

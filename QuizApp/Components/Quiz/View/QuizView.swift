@@ -60,7 +60,10 @@ class QuizView: UIView {
 		return label
 	}()
 
-	let alternativeToAnswerBoardView = AlternativeToAnswerView()
+	let alternativeToAnswerBoardView01 = AlternativeToAnswerView()
+	let alternativeToAnswerBoardView02 = AlternativeToAnswerView()
+	let alternativeToAnswerBoardView03 = AlternativeToAnswerView()
+	let alternativeToAnswerBoardView04 = AlternativeToAnswerView()
 
 	lazy var nextButton: UIButton = {
 		let bnt = UIButton(type: .system)
