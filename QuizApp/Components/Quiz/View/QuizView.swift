@@ -33,7 +33,6 @@ class QuizView: UIView {
 		let label = UILabel()
 		label.numberOfLines = 1
 		label.textColor = .white
-		label.text = "44s" // MOCK
 		label.font = UIFont.mainFont(ofSize: 19)
 		return label
 	}()

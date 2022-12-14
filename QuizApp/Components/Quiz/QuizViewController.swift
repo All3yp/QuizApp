@@ -11,6 +11,7 @@ class QuizViewController: UIViewController, QuizDelegate {
 
 	var coordinator: QuizCoordinator?
 	let quizView: QuizView = QuizView()
+	var timer: ClockTimer = ClockTimer()
 
 	var questionAnswered: Int = 1
 	lazy var viewModel = QuizViewModel(delegate: self)
@@ -24,6 +25,8 @@ class QuizViewController: UIViewController, QuizDelegate {
 		super.viewDidLoad()
 		self.view.backgroundColor = UIColor.CustomColor.dark
 		goToFinalResult()
+		self.timer.delegate = self
+		self.timer.startTimer()
 		self.viewModel.loadQuizQuestionsForComputerScience()
 	}
 
@@ -50,6 +53,41 @@ class QuizViewController: UIViewController, QuizDelegate {
 			question: result.question,
 			answers: answers
 		)
+	}
+
+}
+
+// MARK: - Extensions
+
+extension QuizViewController {
+
+	func updateDisplayClock(for timeRemaining: TimeInterval) {
+		self.quizView.timeMissingLabel.text = textToDisplay(for: timeRemaining)
+	}
+
+	private func textToDisplay(for timeRemaining: TimeInterval) -> String {
+		if timeRemaining == 0 {
+			print("⏱DONE, THROWING TO OTHER QUESTION❌")
+		}
+
+		let minutesRemaining = floor(timeRemaining / 60)
+		let secondsRemaining = timeRemaining - (minutesRemaining * 60)
+
+		let secondsDisplay = String(format: "%02d", Int(secondsRemaining))
+		let timeRemainingDisplay = "\(secondsDisplay)s"
+
+		return timeRemainingDisplay
+	}
+}
+
+extension QuizViewController: TimerProtocol {
+
+	func timeRemainingOnTimer(_ timer: ClockTimer, timeRemaining: TimeInterval) {
+		updateDisplayClock(for: timeRemaining)
+	}
+
+	func timerHasFinished(_ timer: ClockTimer) {
+		updateDisplayClock(for: 0)
 	}
 
 }

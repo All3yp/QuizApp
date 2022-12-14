@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1803B79E294A588D00278BE9 /* TimerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1803B79D294A588D00278BE9 /* TimerProtocol.swift */; };
 		1841ED552948ABCF00558B1F /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841ED542948ABCF00558B1F /* ViewModelProtocol.swift */; };
 		1841ED572948ABFE00558B1F /* QuizDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841ED562948ABFE00558B1F /* QuizDelegate.swift */; };
 		1841ED6129496CF200558B1F /* QuizAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1841ED6029496CF200558B1F /* QuizAppTests.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1803B79D294A588D00278BE9 /* TimerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerProtocol.swift; sourceTree = "<group>"; };
 		1841ED542948ABCF00558B1F /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
 		1841ED562948ABFE00558B1F /* QuizDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDelegate.swift; sourceTree = "<group>"; };
 		1841ED5E29496CF200558B1F /* QuizAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 			children = (
 				1841ED542948ABCF00558B1F /* ViewModelProtocol.swift */,
 				1841ED562948ABFE00558B1F /* QuizDelegate.swift */,
+				1803B79D294A588D00278BE9 /* TimerProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				18F278D7293A823600E41B90 /* QuizViewController.swift in Sources */,
 				18F32A7D293E467000D7704F /* QuizResultView+ViewCode.swift in Sources */,
 				185C7C4C2936D4E70086D4BE /* AppDelegate.swift in Sources */,
+				1803B79E294A588D00278BE9 /* TimerProtocol.swift in Sources */,
 				18AE29C42946729F00DF379C /* Router.swift in Sources */,
 				18AE29BB29464D5B00DF379C /* ServiceError.swift in Sources */,
 				18AE29C2294654A600DF379C /* QuizServiceImplementation.swift in Sources */,
