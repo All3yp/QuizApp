@@ -51,6 +51,8 @@ class AlternativeToAnswerView: UIView {
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		layer.addSublayer(retangularBoardLayer)
+		self.setupViewCode()
+		textForDebug()
 	}
 
 	required init?(coder: NSCoder) {
@@ -59,9 +61,7 @@ class AlternativeToAnswerView: UIView {
 
 	override func layoutSubviews() {
 		super.layoutSubviews()
-		self.setupViewCode()
 		configurateLayer()
-		textForDebug()
 	}
 
 	private func configurateLayer() {
