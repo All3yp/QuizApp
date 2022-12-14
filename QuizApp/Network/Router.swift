@@ -25,7 +25,7 @@ enum Router {
 	private var path: String {
 		switch self {
 			case .computerScience:
-				return "/825a9b94-d2e9-47ce-817d-65844f3582d8"
+				return "/cf1667f7-b872-44de-a753-fb1c87baa98e"
 			case .random:
 				return "/825a9b94-d2e9-47ce-817d-65844f3582d8"
 		}
